@@ -2,13 +2,17 @@ package med.bl3lm.exam.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import med.bl3lm.exam.enums.StatutCredit;
-import java.util.Date;
-import java.util.List;
+
+import java.util.*;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-@Data @NoArgsConstructor @AllArgsConstructor @Builder
+@Inheritance(strategy = InheritanceType.JOINED) // ou SINGLE_TABLE
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@SuperBuilder
 public abstract class Credit {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
