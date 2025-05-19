@@ -1,4 +1,4 @@
-package ma.n7.exam;
+package med.bl3lm.exam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package ma.n7.exam;
+package med.bl3lm.exam;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
